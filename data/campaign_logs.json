@@ -385,5 +385,125 @@
       "emailCampaignId": "hs-email-freelance-creative-pro",
       "audienceListId": "list-203"
     }
+  },
+  {
+    "campaign_id": "campaign-20260414220519-creative",
+    "blog_title": "How AI Automation Transforms Small Creative Agencies: Boosting Lead Response, Content Flow, and Client Relations",
+    "persona": "Creative Agency Owner",
+    "segment_name": "Agency Owners - Growth Focused",
+    "brevo_list_id": "4",
+    "newsletter_version_id": "owner_v1",
+    "send_date": "2026-04-14T22:05:11.993442Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-001",
+      "contact-004"
+    ],
+    "recipient_emails": [
+      "zijinyin@andrew.cmu.edu",
+      "smallc1tylegend@gmail.com"
+    ],
+    "brevo_send_status": "skipped",
+    "brevo_message_id": null
+  },
+  {
+    "campaign_id": "campaign-20260414220519-operations",
+    "blog_title": "How AI Automation Transforms Small Creative Agencies: Boosting Lead Response, Content Flow, and Client Relations",
+    "persona": "Operations Manager at a Small Agency",
+    "segment_name": "Agency Ops - Workflow Efficiency",
+    "brevo_list_id": "5",
+    "newsletter_version_id": "ops_v1",
+    "send_date": "2026-04-14T22:05:11.993442Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-002",
+      "contact-005"
+    ],
+    "recipient_emails": [
+      "ys4674@nyu.edu",
+      "zy2415@nyu.edu"
+    ],
+    "brevo_send_status": "skipped",
+    "brevo_message_id": null
+  },
+  {
+    "campaign_id": "campaign-20260414220519-freelance",
+    "blog_title": "How AI Automation Transforms Small Creative Agencies: Boosting Lead Response, Content Flow, and Client Relations",
+    "persona": "Freelance Creative Professional",
+    "segment_name": "Freelance Creatives - Productivity",
+    "brevo_list_id": "6",
+    "newsletter_version_id": "freelance_v1",
+    "send_date": "2026-04-14T22:05:11.993442Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-003",
+      "contact-006"
+    ],
+    "recipient_emails": [
+      "noahyin625@gmail.com",
+      "parkeryin2003@gmail.com"
+    ],
+    "brevo_send_status": "skipped",
+    "brevo_message_id": null
+  },
+  {
+    "campaign_id": "campaign-20260414221939-creative",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Creative Agency Owner",
+    "segment_name": "Agency Owners - Growth Focused",
+    "brevo_list_id": "4",
+    "newsletter_version_id": "newsletter-owner-v1",
+    "send_date": "2026-04-14T22:19:34.666630Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-001",
+      "contact-004"
+    ],
+    "recipient_emails": [
+      "zijinyin@andrew.cmu.edu",
+      "smallc1tylegend@gmail.com"
+    ],
+    "brevo_send_status": "sent",
+    "brevo_message_id": "<202604142219.41997406599@smtp-relay.mailin.fr>"
+  },
+  {
+    "campaign_id": "campaign-20260414221940-operations",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Operations Manager at a Small Agency",
+    "segment_name": "Agency Ops - Workflow Efficiency",
+    "brevo_list_id": "5",
+    "newsletter_version_id": "newsletter-ops-v1",
+    "send_date": "2026-04-14T22:19:34.666630Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-002",
+      "contact-005"
+    ],
+    "recipient_emails": [
+      "ys4674@nyu.edu",
+      "zy2415@nyu.edu"
+    ],
+    "brevo_send_status": "sent",
+    "brevo_message_id": "<202604142219.79166053084@smtp-relay.mailin.fr>"
+  },
+  {
+    "campaign_id": "campaign-20260414221941-freelance",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Freelance Creative Professional",
+    "segment_name": "Freelance Creatives - Productivity",
+    "brevo_list_id": "6",
+    "newsletter_version_id": "newsletter-freelance-v1",
+    "send_date": "2026-04-14T22:19:34.666630Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-003",
+      "contact-006"
+    ],
+    "recipient_emails": [
+      "noahyin625@gmail.com",
+      "parkeryin2003@gmail.com"
+    ],
+    "brevo_send_status": "sent",
+    "brevo_message_id": "<202604142219.18060728693@smtp-relay.mailin.fr>"
   }
 ]

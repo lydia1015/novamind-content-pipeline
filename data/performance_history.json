@@ -88,5 +88,65 @@
     "click_rate": 0.155,
     "unsubscribe_rate": 0.011,
     "total_contacts": 2
+  },
+  {
+    "campaign_id": "campaign-20260414220519-creative",
+    "blog_title": "How AI Automation Transforms Small Creative Agencies: Boosting Lead Response, Content Flow, and Client Relations",
+    "persona": "Creative Agency Owner",
+    "newsletter_version_id": "owner_v1",
+    "open_rate": 0.455,
+    "click_rate": 0.168,
+    "unsubscribe_rate": 0.016,
+    "total_contacts": 2
+  },
+  {
+    "campaign_id": "campaign-20260414220519-operations",
+    "blog_title": "How AI Automation Transforms Small Creative Agencies: Boosting Lead Response, Content Flow, and Client Relations",
+    "persona": "Operations Manager at a Small Agency",
+    "newsletter_version_id": "ops_v1",
+    "open_rate": 0.513,
+    "click_rate": 0.202,
+    "unsubscribe_rate": 0.009,
+    "total_contacts": 2
+  },
+  {
+    "campaign_id": "campaign-20260414220519-freelance",
+    "blog_title": "How AI Automation Transforms Small Creative Agencies: Boosting Lead Response, Content Flow, and Client Relations",
+    "persona": "Freelance Creative Professional",
+    "newsletter_version_id": "freelance_v1",
+    "open_rate": 0.439,
+    "click_rate": 0.155,
+    "unsubscribe_rate": 0.011,
+    "total_contacts": 2
+  },
+  {
+    "campaign_id": "campaign-20260414221939-creative",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Creative Agency Owner",
+    "newsletter_version_id": "newsletter-owner-v1",
+    "open_rate": 0.455,
+    "click_rate": 0.168,
+    "unsubscribe_rate": 0.016,
+    "total_contacts": 2
+  },
+  {
+    "campaign_id": "campaign-20260414221940-operations",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Operations Manager at a Small Agency",
+    "newsletter_version_id": "newsletter-ops-v1",
+    "open_rate": 0.513,
+    "click_rate": 0.202,
+    "unsubscribe_rate": 0.009,
+    "total_contacts": 2
+  },
+  {
+    "campaign_id": "campaign-20260414221941-freelance",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Freelance Creative Professional",
+    "newsletter_version_id": "newsletter-freelance-v1",
+    "open_rate": 0.439,
+    "click_rate": 0.155,
+    "unsubscribe_rate": 0.011,
+    "total_contacts": 2
   }
 ]

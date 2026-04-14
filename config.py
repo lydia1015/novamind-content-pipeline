@@ -37,6 +37,12 @@ def load_config() -> dict:
     return {
         "groq_api_key": os.getenv("GROQ_API_KEY", "").strip(),
         "groq_model": os.getenv("GROQ_MODEL", "openai/gpt-oss-20b").strip(),
+        "brevo_api_key": os.getenv("BREVO_API_KEY", "").strip(),
+        "brevo_sender_email": os.getenv("BREVO_SENDER_EMAIL", "").strip(),
+        "brevo_sender_name": os.getenv("BREVO_SENDER_NAME", "NovaMind").strip(),
+        "brevo_list_id_owner": os.getenv("BREVO_LIST_ID_OWNER", "").strip(),
+        "brevo_list_id_operations": os.getenv("BREVO_LIST_ID_OPERATIONS", "").strip(),
+        "brevo_list_id_freelance": os.getenv("BREVO_LIST_ID_FREELANCE", "").strip(),
     }
 
 
