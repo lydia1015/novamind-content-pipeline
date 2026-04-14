@@ -35,8 +35,8 @@ def load_config() -> dict:
     if load_dotenv:
         load_dotenv()
     return {
-        "openai_api_key": os.getenv("OPENAI_API_KEY", "").strip(),
-        "openai_model": os.getenv("OPENAI_MODEL", "gpt-4o-mini").strip(),
+        "groq_api_key": os.getenv("GROQ_API_KEY", "").strip(),
+        "groq_model": os.getenv("GROQ_MODEL", "openai/gpt-oss-20b").strip(),
     }
 
 

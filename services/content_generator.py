@@ -11,11 +11,11 @@ from prompts.content_prompts import build_content_prompt
 
 
 class ContentGenerator:
-    """Generate content with OpenAI when available, otherwise use a deterministic fallback."""
+    """Generate content with Groq when available, otherwise use a deterministic fallback."""
 
     def __init__(self, config: dict) -> None:
-        self.api_key = config.get("openai_api_key", "")
-        self.model = config.get("openai_model", "gpt-4o-mini")
+        self.api_key = config.get("groq_api_key", "")
+        self.model = config.get("groq_model", "openai/gpt-oss-20b")
 
     def generate(self, topic: str) -> dict:
         """Generate content for the supplied topic and persist it locally."""
@@ -23,19 +23,23 @@ class ContentGenerator:
         if not topic:
             raise ValueError("Topic input cannot be empty.")
 
-        content = self._generate_with_openai(topic) if self.api_key else self._generate_fallback(topic)
+        content = self._generate_with_groq(topic) if self.api_key else self._generate_fallback(topic)
         content["topic"] = topic
         content["generated_at"] = datetime.utcnow().isoformat() + "Z"
         self._save(content)
         return content
 
-    def _generate_with_openai(self, topic: str) -> dict:
-        """Attempt to generate content with the OpenAI API, falling back on failure."""
+    def _generate_with_groq(self, topic: str) -> dict:
+        """Attempt to generate content through Groq's OpenAI-compatible API, falling back on failure."""
         prompt = build_content_prompt(topic)
         try:
             from openai import OpenAI
 
-            client = OpenAI(api_key=self.api_key)
+            # Groq exposes an OpenAI-compatible API surface, so the standard SDK works with a custom base URL.
+            client = OpenAI(
+                api_key=self.api_key,
+                base_url="https://api.groq.com/openai/v1",
+            )
             response = client.responses.create(
                 model=self.model,
                 input=prompt,

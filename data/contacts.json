@@ -8,7 +8,7 @@
     "job_title": "Founder",
     "persona": "Creative Agency Owner",
     "lifecycle_stage": "lead",
-    "last_updated_at": "2026-04-13T22:02:25.648747Z",
+    "last_updated_at": "2026-04-14T19:03:43.827749Z",
     "crm_status": "updated",
     "mock_hubspot_contact_endpoint": "/crm/v3/objects/contacts/batch/upsert"
   },
@@ -21,7 +21,7 @@
     "job_title": "Operations Manager",
     "persona": "Operations Manager at a Small Agency",
     "lifecycle_stage": "subscriber",
-    "last_updated_at": "2026-04-13T22:02:25.648752Z",
+    "last_updated_at": "2026-04-14T19:03:43.827753Z",
     "crm_status": "updated",
     "mock_hubspot_contact_endpoint": "/crm/v3/objects/contacts/batch/upsert"
   },
@@ -34,7 +34,7 @@
     "job_title": "Freelance Brand Designer",
     "persona": "Freelance Creative Professional",
     "lifecycle_stage": "subscriber",
-    "last_updated_at": "2026-04-13T22:02:25.648755Z",
+    "last_updated_at": "2026-04-14T19:03:43.827756Z",
     "crm_status": "updated",
     "mock_hubspot_contact_endpoint": "/crm/v3/objects/contacts/batch/upsert"
   },
@@ -47,7 +47,7 @@
     "job_title": "Managing Director",
     "persona": "Creative Agency Owner",
     "lifecycle_stage": "lead",
-    "last_updated_at": "2026-04-13T22:02:25.648757Z",
+    "last_updated_at": "2026-04-14T19:03:43.827758Z",
     "crm_status": "updated",
     "mock_hubspot_contact_endpoint": "/crm/v3/objects/contacts/batch/upsert"
   },
@@ -60,7 +60,7 @@
     "job_title": "Operations Lead",
     "persona": "Operations Manager at a Small Agency",
     "lifecycle_stage": "subscriber",
-    "last_updated_at": "2026-04-13T22:02:25.648759Z",
+    "last_updated_at": "2026-04-14T19:03:43.827759Z",
     "crm_status": "updated",
     "mock_hubspot_contact_endpoint": "/crm/v3/objects/contacts/batch/upsert"
   },
@@ -73,7 +73,7 @@
     "job_title": "Freelance Motion Designer",
     "persona": "Freelance Creative Professional",
     "lifecycle_stage": "lead",
-    "last_updated_at": "2026-04-13T22:02:25.648761Z",
+    "last_updated_at": "2026-04-14T19:03:43.827761Z",
     "crm_status": "updated",
     "mock_hubspot_contact_endpoint": "/crm/v3/objects/contacts/batch/upsert"
   }

@@ -127,5 +127,263 @@
       "emailCampaignId": "hs-email-freelance-creative-pro",
       "audienceListId": "list-203"
     }
+  },
+  {
+    "campaign_id": "campaign-20260414185543-creative",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Creative Agency Owner",
+    "segment_name": "Agency Owners - Growth Focused",
+    "hubspot_list_id": "list-201",
+    "newsletter_version_id": "newsletter-owner-v1",
+    "send_date": "2026-04-14T18:55:43.450897Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-001",
+      "contact-004"
+    ],
+    "mock_hubspot_endpoint": "/marketing/v3/emails/send",
+    "mock_hubspot_list_membership_endpoint": "/crm/v3/lists/{listId}/memberships/add",
+    "mock_payload_preview": {
+      "message": {
+        "subject": "Scale client delivery without adding headcount pressure",
+        "previewText": "A practical look at how agency owners can improve margin and speed with smarter automation.",
+        "from": {
+          "email": "marketing@novamind.ai",
+          "name": "NovaMind"
+        }
+      },
+      "segment": {
+        "persona": "Creative Agency Owner",
+        "recipientCount": 2,
+        "contactIds": [
+          "contact-001",
+          "contact-004"
+        ]
+      },
+      "content": {
+        "newsletterVersionId": "newsletter-owner-v1",
+        "body": "Agency owners need growth that does not come at the cost of team burnout or margin erosion. This piece shows how AI automation for small creative agencies can turn one campaign idea into a repeatable pipeline, speed up client delivery, and give strategists more time for upsell conversations, retention, and higher-value work."
+      }
+    },
+    "mock_response_preview": {
+      "status": "QUEUED",
+      "emailCampaignId": "hs-email-creative-agency-owner",
+      "audienceListId": "list-201"
+    }
+  },
+  {
+    "campaign_id": "campaign-20260414185543-operations",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Operations Manager at a Small Agency",
+    "segment_name": "Agency Ops - Workflow Efficiency",
+    "hubspot_list_id": "list-202",
+    "newsletter_version_id": "newsletter-ops-v1",
+    "send_date": "2026-04-14T18:55:43.450897Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-002",
+      "contact-005"
+    ],
+    "mock_hubspot_endpoint": "/marketing/v3/emails/send",
+    "mock_hubspot_list_membership_endpoint": "/crm/v3/lists/{listId}/memberships/add",
+    "mock_payload_preview": {
+      "message": {
+        "subject": "Standardize campaign handoffs without slowing the team down",
+        "previewText": "See a lightweight workflow for content generation, segmentation, and campaign logging.",
+        "from": {
+          "email": "marketing@novamind.ai",
+          "name": "NovaMind"
+        }
+      },
+      "segment": {
+        "persona": "Operations Manager at a Small Agency",
+        "recipientCount": 2,
+        "contactIds": [
+          "contact-002",
+          "contact-005"
+        ]
+      },
+      "content": {
+        "newsletterVersionId": "newsletter-ops-v1",
+        "body": "If you manage delivery across a lean agency team, AI automation for small creative agencies can reduce repetitive admin and make campaign ops more dependable. Explore a workflow that generates content variants, maps them to the right audience segments, and keeps campaign reporting organized without adding more manual QA."
+      }
+    },
+    "mock_response_preview": {
+      "status": "QUEUED",
+      "emailCampaignId": "hs-email-operations-manager-small-agency",
+      "audienceListId": "list-202"
+    }
+  },
+  {
+    "campaign_id": "campaign-20260414185543-freelance",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Freelance Creative Professional",
+    "segment_name": "Freelance Creatives - Productivity",
+    "hubspot_list_id": "list-203",
+    "newsletter_version_id": "newsletter-freelance-v1",
+    "send_date": "2026-04-14T18:55:43.450897Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-003",
+      "contact-006"
+    ],
+    "mock_hubspot_endpoint": "/marketing/v3/emails/send",
+    "mock_hubspot_list_membership_endpoint": "/crm/v3/lists/{listId}/memberships/add",
+    "mock_payload_preview": {
+      "message": {
+        "subject": "Turn one client brief into multiple polished deliverables faster",
+        "previewText": "Use a simple AI-assisted workflow to repurpose ideas without losing your creative voice.",
+        "from": {
+          "email": "marketing@novamind.ai",
+          "name": "NovaMind"
+        }
+      },
+      "segment": {
+        "persona": "Freelance Creative Professional",
+        "recipientCount": 2,
+        "contactIds": [
+          "contact-003",
+          "contact-006"
+        ]
+      },
+      "content": {
+        "newsletterVersionId": "newsletter-freelance-v1",
+        "body": "Freelance creatives often handle strategy, writing, revisions, and delivery alone. AI automation for small creative agencies can help you turn one strong brief into blog and newsletter assets faster, so you spend less time reworking copy and more time delivering polished client-ready output."
+      }
+    },
+    "mock_response_preview": {
+      "status": "QUEUED",
+      "emailCampaignId": "hs-email-freelance-creative-pro",
+      "audienceListId": "list-203"
+    }
+  },
+  {
+    "campaign_id": "campaign-20260414190343-creative",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Creative Agency Owner",
+    "segment_name": "Agency Owners - Growth Focused",
+    "hubspot_list_id": "list-201",
+    "newsletter_version_id": "newsletter-owner-v1",
+    "send_date": "2026-04-14T19:03:43.827745Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-001",
+      "contact-004"
+    ],
+    "mock_hubspot_endpoint": "/marketing/v3/emails/send",
+    "mock_hubspot_list_membership_endpoint": "/crm/v3/lists/{listId}/memberships/add",
+    "mock_payload_preview": {
+      "message": {
+        "subject": "Scale client delivery without adding headcount pressure",
+        "previewText": "A practical look at how agency owners can improve margin and speed with smarter automation.",
+        "from": {
+          "email": "marketing@novamind.ai",
+          "name": "NovaMind"
+        }
+      },
+      "segment": {
+        "persona": "Creative Agency Owner",
+        "recipientCount": 2,
+        "contactIds": [
+          "contact-001",
+          "contact-004"
+        ]
+      },
+      "content": {
+        "newsletterVersionId": "newsletter-owner-v1",
+        "body": "Agency owners need growth that does not come at the cost of team burnout or margin erosion. This piece shows how AI automation for small creative agencies can turn one campaign idea into a repeatable pipeline, speed up client delivery, and give strategists more time for upsell conversations, retention, and higher-value work."
+      }
+    },
+    "mock_response_preview": {
+      "status": "QUEUED",
+      "emailCampaignId": "hs-email-creative-agency-owner",
+      "audienceListId": "list-201"
+    }
+  },
+  {
+    "campaign_id": "campaign-20260414190343-operations",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Operations Manager at a Small Agency",
+    "segment_name": "Agency Ops - Workflow Efficiency",
+    "hubspot_list_id": "list-202",
+    "newsletter_version_id": "newsletter-ops-v1",
+    "send_date": "2026-04-14T19:03:43.827745Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-002",
+      "contact-005"
+    ],
+    "mock_hubspot_endpoint": "/marketing/v3/emails/send",
+    "mock_hubspot_list_membership_endpoint": "/crm/v3/lists/{listId}/memberships/add",
+    "mock_payload_preview": {
+      "message": {
+        "subject": "Standardize campaign handoffs without slowing the team down",
+        "previewText": "See a lightweight workflow for content generation, segmentation, and campaign logging.",
+        "from": {
+          "email": "marketing@novamind.ai",
+          "name": "NovaMind"
+        }
+      },
+      "segment": {
+        "persona": "Operations Manager at a Small Agency",
+        "recipientCount": 2,
+        "contactIds": [
+          "contact-002",
+          "contact-005"
+        ]
+      },
+      "content": {
+        "newsletterVersionId": "newsletter-ops-v1",
+        "body": "If you manage delivery across a lean agency team, AI automation for small creative agencies can reduce repetitive admin and make campaign ops more dependable. Explore a workflow that generates content variants, maps them to the right audience segments, and keeps campaign reporting organized without adding more manual QA."
+      }
+    },
+    "mock_response_preview": {
+      "status": "QUEUED",
+      "emailCampaignId": "hs-email-operations-manager-small-agency",
+      "audienceListId": "list-202"
+    }
+  },
+  {
+    "campaign_id": "campaign-20260414190343-freelance",
+    "blog_title": "How AI automation for small creative agencies helps small creative agencies move faster",
+    "persona": "Freelance Creative Professional",
+    "segment_name": "Freelance Creatives - Productivity",
+    "hubspot_list_id": "list-203",
+    "newsletter_version_id": "newsletter-freelance-v1",
+    "send_date": "2026-04-14T19:03:43.827745Z",
+    "total_contacts": 2,
+    "contact_ids": [
+      "contact-003",
+      "contact-006"
+    ],
+    "mock_hubspot_endpoint": "/marketing/v3/emails/send",
+    "mock_hubspot_list_membership_endpoint": "/crm/v3/lists/{listId}/memberships/add",
+    "mock_payload_preview": {
+      "message": {
+        "subject": "Turn one client brief into multiple polished deliverables faster",
+        "previewText": "Use a simple AI-assisted workflow to repurpose ideas without losing your creative voice.",
+        "from": {
+          "email": "marketing@novamind.ai",
+          "name": "NovaMind"
+        }
+      },
+      "segment": {
+        "persona": "Freelance Creative Professional",
+        "recipientCount": 2,
+        "contactIds": [
+          "contact-003",
+          "contact-006"
+        ]
+      },
+      "content": {
+        "newsletterVersionId": "newsletter-freelance-v1",
+        "body": "Freelance creatives often handle strategy, writing, revisions, and delivery alone. AI automation for small creative agencies can help you turn one strong brief into blog and newsletter assets faster, so you spend less time reworking copy and more time delivering polished client-ready output."
+      }
+    },
+    "mock_response_preview": {
+      "status": "QUEUED",
+      "emailCampaignId": "hs-email-freelance-creative-pro",
+      "audienceListId": "list-203"
+    }
   }
 ]

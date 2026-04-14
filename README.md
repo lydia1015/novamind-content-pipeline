@@ -9,7 +9,7 @@ The scope is intentionally simple:
 - local Python CLI only
 - JSON files for storage
 - mocked CRM behavior with HubSpot-inspired endpoints and payloads
-- optional OpenAI-powered generation with a deterministic local fallback
+- optional Groq-powered generation with a deterministic local fallback
 
 The result is a project that is easy to run, easy to inspect, and complete enough to discuss in an interview.
 
@@ -37,13 +37,13 @@ cp .env.example .env
 Then edit `.env` to include:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-4o-mini
+GROQ_API_KEY=your_groq_api_key_here
+GROQ_MODEL=openai/gpt-oss-20b
 ```
 
 Important notes:
 
-- `OPENAI_API_KEY` is optional. If it is missing or blank, the app still runs using the built-in fallback content generator.
+- `GROQ_API_KEY` is optional. If it is missing or blank, the app still runs using the built-in fallback content generator.
 - No secrets are hardcoded anywhere in the repository.
 - `.env` should stay local and should not be committed.
 
@@ -92,7 +92,7 @@ For a single topic input, the pipeline:
 ### Prompt Layer
 
 - `prompts/content_prompts.py`
-  Defines the prompt used when OpenAI generation is enabled.
+  Defines the prompt used when Groq generation is enabled.
 
 ### Services
 
@@ -154,9 +154,10 @@ The repository includes starter data so the project is runnable immediately:
 ## Tools, APIs, and Model Choices
 
 - **Python 3**
-- **OpenAI Python SDK** for optional AI generation
+- **Groq API** for optional LLM content generation
+- **OpenAI Python SDK** used as a lightweight OpenAI-compatible client for Groq
 - **python-dotenv** for local environment loading convenience
-- **`gpt-4o-mini`** as the default model value in `.env.example`
+- **`openai/gpt-oss-20b`** as the default Groq model value in `.env.example`
 - **Local JSON storage** for transparency and easy review
 
 ## Assumptions And Mocked Components
@@ -165,7 +166,7 @@ The repository includes starter data so the project is runnable immediately:
 - CRM behavior is mocked intentionally to keep the exercise self-contained.
 - HubSpot-inspired endpoints and payload shapes are included in `services/crm_service.py` to show where a real integration would be added.
 - Performance is simulated deterministically instead of using a random generator so repeated runs are easier to compare.
-- If OpenAI output is unavailable, fallback content is generated locally so the project remains demoable with minimal setup.
+- If Groq output is unavailable, fallback content is generated locally so the project remains demoable with minimal setup.
 
 ## How HubSpot Could Be Connected In A Real Version
 
@@ -200,9 +201,9 @@ cp .env.example .env
 python3 main.py --topic "AI automation for small creative agencies"
 ```
 
-If you want to skip the OpenAI API and use only the fallback generator, keep `.env` like this:
+If you want to skip Groq and use only the fallback generator, keep `.env` like this:
 
 ```env
-OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o-mini
+GROQ_API_KEY=
+GROQ_MODEL=openai/gpt-oss-20b
 ```

@@ -1,6 +1,6 @@
 # NovaMind Campaign Summary
 
-**Run date:** 2026-04-13T22:02:25.651922Z
+**Run date:** 2026-04-14T19:03:43.830107Z
 **Topic:** AI automation for small creative agencies
 **Blog title:** How AI automation for small creative agencies helps small creative agencies move faster
 
