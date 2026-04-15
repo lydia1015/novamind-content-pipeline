@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains a submission-ready MVP for the take-home assignment **“AI-Powered Marketing Content Pipeline.”** It simulates how NovaMind, a fictional AI startup serving small creative agencies, could turn one campaign topic into multi-format content, sync audience contacts into a CRM, send persona-specific newsletters, analyze campaign performance, and recommend what to test next.
+**NovaMind Content Pipeline** is a lightweight AI-powered marketing workflow built for small creative agencies. It turns a single campaign topic into multi-format content, syncs audience contacts into a CRM, delivers persona-specific newsletters, analyzes campaign performance, and recommends what to test next. The pipeline is designed as an end-to-end loop from content generation to distribution, measurement, and optimization.
 
 The implementation is intentionally lightweight:
 
@@ -149,6 +149,8 @@ streamlit run app.py
 
 The dashboard lets you enter a topic, run the workflow, view generated content, inspect persona newsletters, compare simulated performance, and read the latest optimization recommendations. The **Send emails through Brevo** checkbox is off by default for safe demo runs.
 
+![Dashboard Overview](assets/screenshots/dashboard-overview.png)
+
 ## Outputs
 
 After a successful run:
@@ -159,15 +161,22 @@ After a successful run:
 - `outputs/latest_run_summary.md` stores the latest markdown performance summary
 - `outputs/content_optimization_recommendations.md` stores recommended next topics, improved subject line ideas, persona-specific revisions, and an optimization memo
 
+![Generated Content](assets/screenshots/generated-content.png)
+
 ## Performance Simulation
 
 This MVP uses a realistic rule-based simulation for engagement metrics rather than a fixed mock. The simulator starts with persona-level baselines, then adjusts outcomes using lightweight content signals such as subject-line style, preview-text clarity, CTA presence, content length, and whether the copy emphasizes workflow efficiency or growth outcomes.
 
 This approach was chosen to keep the project submission-ready while still producing performance logs that are more believable and easier to discuss than random or flat deterministic values. In a production version, the same reporting layer could be updated to ingest real Brevo delivery, open, click, and unsubscribe events instead of simulated records.
 
+![Performance Snapshot](assets/screenshots/performance.png)
+![Summary](assets/screenshots/summary.png)
+
 ## Content Optimization
 
 After the campaign summary is generated, the optimizer uses the latest generated content, performance records, and markdown summary to produce a short content-growth memo. The recommendations focus on what to test next: topic direction, headline/subject-line improvements, CTA patterns to reuse, and persona segments that need sharper value propositions.
+
+![Optimization Recommendations](assets/screenshots/optimization.png)
 
 ## Assumptions and Demo Notes
 
