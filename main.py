@@ -7,6 +7,7 @@ import sys
 
 from config import PERSONAS, ensure_directories, load_config
 from services.content_generator import ContentGenerator
+from services.content_optimizer import OPTIMIZATION_OUTPUT_FILE, ContentOptimizer
 from services.crm_service import CRMService
 from services.metrics_simulator import MetricsSimulator
 from services.performance_analyzer import PerformanceAnalyzer
@@ -39,6 +40,7 @@ def main() -> int:
         crm_result = CRMService().run_campaign(content)
         metrics = MetricsSimulator().simulate(topic, crm_result["campaign_entries"])
         summary = PerformanceAnalyzer().analyze(topic, content, metrics)
+        ContentOptimizer(config).optimize()
     except Exception as exc:
         print(f"Pipeline failed: {exc}")
         return 1
@@ -49,6 +51,7 @@ def main() -> int:
     print(f"Personas processed: {', '.join(PERSONAS)}")
     print(f"Campaigns logged: {len(crm_result['campaign_entries'])}")
     print(f"Performance summaries generated: {len(metrics)}")
+    print(f"Optimization recommendations generated: {OPTIMIZATION_OUTPUT_FILE}")
     print("\nLatest summary preview:\n")
     print(summary)
     return 0

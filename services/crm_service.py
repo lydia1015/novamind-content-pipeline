@@ -19,9 +19,10 @@ class CRMService:
     BASE_URL = "https://api.brevo.com/v3"
     REQUEST_TIMEOUT = 15
 
-    def __init__(self) -> None:
+    def __init__(self, send_emails: bool = True) -> None:
         self.logger = CampaignLogger()
         self.config = load_config()
+        self.send_emails = send_emails
 
     def run_campaign(self, content: dict) -> dict:
         """Load contacts, sync them to Brevo, send persona-specific emails, and log campaign history."""
@@ -58,6 +59,9 @@ class CRMService:
                 "segment_name": segment_definition.get("segment_name", persona),
                 "brevo_list_id": list_id,
                 "newsletter_version_id": newsletter.get("newsletter_version_id", "newsletter-generic-v1"),
+                "subject_line": newsletter.get("subject_line", ""),
+                "preview_text": newsletter.get("preview_text", ""),
+                "newsletter_body": newsletter.get("body", ""),
                 "send_date": send_date,
                 "total_contacts": len(segment_contacts),
                 "contact_ids": [contact["id"] for contact in segment_contacts],
@@ -221,6 +225,15 @@ class CRMService:
         """Send the persona-specific newsletter to each synced contact in the segment."""
         if not self._brevo_enabled():
             return []
+        if not self.send_emails:
+            return [
+                {
+                    "email": contact.get("email", "").strip(),
+                    "status": "not_sent",
+                    "message_id": None,
+                }
+                for contact in contacts
+            ]
 
         results = []
         for contact in contacts:
@@ -343,6 +356,8 @@ class CRMService:
             return "partial"
         if "sent" in statuses and "skipped" in statuses:
             return "partial"
+        if statuses == {"not_sent"}:
+            return "not_sent"
         if "failed" in statuses:
             return "failed"
         return "skipped"
