@@ -1,3 +1,4 @@
+![Workflow](assets/screenshots/mermaid-diagram.png)
 # NovaMind Content Pipeline
 
 ## Overview
